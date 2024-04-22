@@ -52,6 +52,10 @@
     --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 }
 
+body, html{
+  scroll-padding-top: 95px;
+}
+
 *,
 *::before,
 *::after{
@@ -301,6 +305,11 @@ body.nav-active{
     font-size: 4rem;
 }
 
+.logo-container{
+  display: flex;
+  flex-direction: row;
+}
+
 .navbar,
 .overlay{
     position: fixed;
@@ -354,6 +363,12 @@ body.nav-active{
     padding: 10px 24px;
 }
 
+.navbar-link:hover{
+  background-color: var(--verdigris);
+  color: var(--alice-blue);
+  transition: all 0.3s;
+}
+
 .social-list{
     justify-content: center;
     gap: 20px;
@@ -390,15 +405,6 @@ body.nav-active{
 .hero-subtitle{
     color: var(--white);
     font-weight: var(--fw-500);
-    padding-inline-start: 80px;
-}
-
-.hero-subtitle::before{
-    top: 50%;
-    left: 0;
-    width: 60px;
-    height: 1px;
-    background-color: var(--white);
 }
 
 .hero-title{
@@ -491,6 +497,11 @@ body.nav-active{
 
 .about{
     padding-block-end: 0;
+    padding-top: 30px;
+}
+
+.bg-image{
+
 }
 
 .about .container{
