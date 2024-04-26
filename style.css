@@ -547,7 +547,9 @@ body.nav-active{
 }
 /*Listing*/
 
-.listing { background-color: var(--alice-blue); }
+.listing { 
+  background-color: var(--alice-blue); 
+}
 
 .listing-card {
   padding: 25px 16px;
